@@ -1,0 +1,228 @@
+@font-face {
+    font-family: PHCT;
+    src: url(PHCT_FONT.ttf);
+}
+
+#navbar-margin {
+    background-color: #2c302e;
+}
+
+.container-fluid {
+    background-color: #2c302e;
+}
+
+/* ---------- Sección principal ---------- */
+.schedule-section {
+    min-height: calc(100vh - 120px);
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+    background:
+        radial-gradient(circle at top, rgba(1, 187, 48, 0.08), transparent 30%),
+        linear-gradient(180deg, #2c302e 0%, #252927 100%);
+}
+
+.schedule-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.schedule-card {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.26);
+    border: 2px solid #01bb30;
+    border-radius: 30px;
+    padding: 2rem;
+    box-shadow: 0 0 20px rgba(1, 187, 48, 0.12);
+    backdrop-filter: blur(3px);
+}
+
+.schedule-header {
+    margin-bottom: 1.5rem;
+}
+
+.schedule-title {
+    font-family: PHCT, sans-serif;
+    color: #01bb30;
+    font-size: 3rem;
+    letter-spacing: 2px;
+    margin-bottom: 0.5rem;
+}
+
+.schedule-subtitle {
+    color: whitesmoke;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    opacity: 0.9;
+    margin-bottom: 0;
+}
+
+/* ---------- Leyenda ---------- */
+.schedule-legend {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+}
+
+.legend-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: whitesmoke;
+    font-family: PHCT, sans-serif;
+    font-size: 0.9rem;
+    padding: 0.55rem 0.95rem;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 999px;
+    background-color: rgba(255, 255, 255, 0.04);
+}
+
+.legend-dot {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.presencial-dot {
+    background-color: rgba(1, 187, 48, 0.85);
+}
+
+.mixta-dot {
+    background-color: rgba(0, 153, 255, 0.85);
+}
+
+.linea-dot {
+    background-color: rgba(255, 193, 7, 0.9);
+}
+
+/* ---------- Tabla ---------- */
+.schedule-table {
+    min-width: 980px;
+    border-collapse: separate;
+    border-spacing: 8px;
+    margin-bottom: 0;
+    color: whitesmoke;
+}
+
+.schedule-table thead th {
+    font-family: PHCT, sans-serif;
+    color: #01bb30;
+    background-color: #0c0c0c;
+    border: 2px solid #01bb30;
+    padding: 14px 10px;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    vertical-align: middle;
+}
+
+.schedule-table td {
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    background-color: rgba(255, 255, 255, 0.03);
+    padding: 14px 10px;
+    min-height: 110px;
+    vertical-align: middle;
+    color: whitesmoke;
+}
+
+.hour-col {
+    font-family: PHCT, sans-serif;
+    background-color: #111 !important;
+    color: whitesmoke !important;
+    border: 2px solid #01bb30 !important;
+    width: 145px;
+    white-space: nowrap;
+    letter-spacing: 1px;
+}
+
+.empty-cell {
+    background-color: rgba(255, 255, 255, 0.015) !important;
+}
+
+/* ---------- Celdas de materias ---------- */
+.class-cell {
+    border-radius: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.class-cell .subject {
+    font-weight: 700;
+    font-size: 0.96rem;
+    margin-bottom: 0.35rem;
+    color: white;
+}
+
+.class-cell .classroom {
+    font-size: 0.9rem;
+    margin-bottom: 0.25rem;
+    color: #f0f0f0;
+}
+
+.class-cell .mode {
+    font-size: 0.78rem;
+    letter-spacing: 0.5px;
+    opacity: 0.9;
+}
+
+.presencial {
+    background: rgba(1, 187, 48, 0.16) !important;
+    border: 1px solid rgba(1, 187, 48, 0.45) !important;
+    box-shadow: inset 0 0 0 1px rgba(1, 187, 48, 0.15);
+}
+
+.mixta {
+    background: rgba(0, 153, 255, 0.16) !important;
+    border: 1px solid rgba(0, 153, 255, 0.45) !important;
+    box-shadow: inset 0 0 0 1px rgba(0, 153, 255, 0.15);
+}
+
+.linea {
+    background: rgba(255, 193, 7, 0.16) !important;
+    border: 1px solid rgba(255, 193, 7, 0.45) !important;
+    box-shadow: inset 0 0 0 1px rgba(255, 193, 7, 0.15);
+}
+
+/* ---------- Nota inferior ---------- */
+.schedule-note {
+    margin-top: 1.4rem;
+    color: rgba(245, 245, 245, 0.85);
+    font-size: 0.95rem;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 992px) {
+    .schedule-card {
+        padding: 1.25rem;
+    }
+
+    .schedule-title {
+        font-size: 2.3rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .schedule-section {
+        padding-top: 2rem;
+        padding-bottom: 2.5rem;
+    }
+
+    .schedule-title {
+        font-size: 1.7rem;
+    }
+
+    .schedule-subtitle {
+        font-size: 0.9rem;
+    }
+
+    .legend-item {
+        font-size: 0.8rem;
+        padding: 0.45rem 0.8rem;
+    }
+
+    .schedule-card {
+        border-radius: 22px;
+        padding: 1rem;
+    }
+}

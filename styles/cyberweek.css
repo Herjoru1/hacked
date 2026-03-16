@@ -1,0 +1,151 @@
+@font-face {
+    font-family: PHCT;
+    src: url(PHCT_FONT.ttf);
+}
+
+#navbar-margin {
+    background-color: #000;
+}
+
+.container-fluid {
+    background-color: #000;
+}
+
+.txt-c {
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 7em;
+    margin-bottom: 5em;
+    text-align: center;
+}
+
+.promo {
+    font-family: PHCT;
+    color: whitesmoke;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    word-break: break-word;
+}
+
+/* @media (max-width: 576px) { */
+/*     .promo { */
+/*         font-size: 5vw; */
+/*     } */
+/* } */
+
+.message_cw {
+    font-family: PHCT;
+    color: whitesmoke;
+    text-align: justify;
+}
+
+.container {
+    max-width: 1200px; /* Establece el ancho máximo */
+    margin: 0 auto; /* Centra horizontalmente */
+    padding: 10px; /* Añade algo de espacio alrededor del contenido */
+}
+
+.container_cw_msg {
+    max-width: 1500px; /* Establece el ancho máximo */
+    margin: 0 auto; /* Centra horizontalmente */
+    padding: 10px; /* Añade algo de espacio alrededor del contenido */
+}
+
+.brand {
+    font-size: 4em;
+    color: #01bb30;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+@media (max-width: 576px) {
+    .brand {
+        font-size: 2rem;
+        color: #01bb30;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+    }
+}
+
+#buttonDiv {
+    margin-bottom: 7em;
+    display: flex;
+    justify-content: center;
+}
+
+/* Botón original .button-link */
+.button-link {
+    font-family: PHCT, sans-serif;
+    font-size: 24px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+    cursor: pointer;
+    border: 3px solid;
+    padding: 0.25em 0.5em;
+    box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+    position: relative;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.button-link:active {
+    box-shadow: 0px 0px 0px 0px;
+    top: 5px;
+    left: 5px;
+}
+
+.button-link:hover {
+    background-color: #01bb30;
+}
+
+/* Nuevo estilo para botón con fondo blanco, texto negro y borde verde */
+.button-white {
+    font-family: PHCT, sans-serif !important;
+    font-size: 24px !important;
+    letter-spacing: 2px !important;
+    text-transform: uppercase !important;
+    color: black !important;
+    background-color: white !important;
+    border: 2px solid #01bb30 !important;
+    padding: 0.5em 1.2em !important;
+    border-radius: 10px !important;
+    cursor: pointer !important;
+    transition: background-color 0.3s ease, color 0.3s ease !important;
+    user-select: none !important;
+    -webkit-user-select: none !important;
+    touch-action: manipulation !important;
+}
+
+.button-white:hover {
+    background-color: #01bb30 !important;
+    color: white !important;
+}
+
+html, body {
+    background-color: #000;
+    color: #fff;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    background-color: transparent !important;
+}
+
+html, body {
+    background-color: #000 !important;
+    color: #fff !important;
+    height: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.container, .container-fluid, .row, #navbar-margin, #buttonDiv {
+    background-color: transparent !important;
+}
